@@ -40,7 +40,6 @@ body{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
 }
 
 .header{
@@ -529,6 +528,8 @@ body{
     background: #FFFFFF;
     width: 170px;
     height: 92px;
+    border: 1px solid#AFB1B8;
+    border-radius: 4px;
 }
 
 .clients-item:not(:last-child) {
@@ -538,7 +539,6 @@ body{
 .clients-link{
     width: 100%;
     height: 100%;
-    background-color: #E5E5E5;
     border: 1px solid#AFB1B8;
     border-radius: 4px;
     display: flex;
@@ -553,11 +553,17 @@ body{
     fill: currentColor;
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon{
+.clients-item:hover .clients-link:hover,
+.clients-item:focus .clients-link:focus{
     border: 1px solid #2196F3;
     fill: #2196F3;
 }
+
+.clients-icon:hover,
+.clients-icon:focus{
+    fill: #2196F3;
+}
+
 
 /*-----------Projects--------------*/
 .projects{
@@ -950,12 +956,24 @@ justify-content: center;
     margin-bottom: 28px;
 }
 
+.input-wrap{
+    position: relative;
+}
+
+.modal-icon{
+    position: absolute;
+    left: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 .modal-input{
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 10px;
+    outline: none;
 }
   
 .modal-input::placeholder{
@@ -969,10 +987,14 @@ justify-content: center;
     margin-bottom: 14px;
 }
 
-.modal-input:focus,
+.modal-input:focus, 
 .modal-input:not(:placeholder-shown){
     color: #2196F3;
     border-color: #2196F3;
+}
+
+.modal-input:focus + .modal-icon{
+    fill: var(--accent-color);
 }
 
 .modal-text{
@@ -981,4 +1003,115 @@ justify-content: center;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    font-size: 12px;
+    color: #757575 50%;
+}
+
+.check-text{
+    color: #757575;
+    font-size: 14px;
+    display: flex;
+}
+
+.check-text::before{
+    content: "";
+    width:16px;
+    height:15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.modal-check:checked + .check-text::before{
+    background-color: var(--accent-color);
+    background-image: url(../images/icons/Check.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-check:focus + .check-text::before{
+    border-color: var(--accent-color);
+}
+
+.modal-check{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0000);
+    overflow: hidden;
+}
+
+.online-btn{
+    color: #FFFFFF;
+    background: #2196F3;
+}
+
+.online-btn:hover
+.online-btn:focus{
+    color:#188CE8
+}
+
+.subscription{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 93px;
+}
+
+.field{
+    position: relative;    
+}
+
+.subscription-label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.mail-input{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.send-btn{
+    position: absolute;
+    top: 108px;
+    left: 12px;
+    background-color:transparent;
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+    background:#2196F3;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.send-btn:hover .btn-icon:hover,
+.send-btn:focus .btn-icon:hover{
+    color:#188CE8
+}
+
+.send-btn-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    }
+
+.btn-icon{
+    position: absolute;
+    right: 12px;
+    top:50%;
+    color: #FFFFFF;
+    transform: translateY(-50%);
 }
