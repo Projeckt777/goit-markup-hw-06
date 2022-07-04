@@ -285,7 +285,7 @@ body{
     padding: 10px 32px;
     margin: 0 auto;
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover
@@ -932,7 +932,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     height: 50px;
     min-width: 200px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .modal-close-btn{
@@ -953,7 +953,7 @@ justify-content: center;
 }
 
 .modal-field{
-    margin-bottom: 28px;
+    margin-bottom: 12px;
 }
 
 .input-wrap{
@@ -1022,6 +1022,10 @@ justify-content: center;
     margin-right: 8px;
 }
 
+.agreement-link{
+    color: #2196F3;
+}
+
 .modal-check:checked + .check-text::before{
     background-color: var(--accent-color);
     background-image: url(../images/icons/Check.svg);
@@ -1044,8 +1048,24 @@ justify-content: center;
 }
 
 .online-btn{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    height: 50px;
+    max-width: 200px;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #FFFFFF;
     background: #2196F3;
+    padding-top: 10px;
+    padding-left: 55px;
+    padding-bottom: 10px;
+    padding-right: 55px; 
+    margin-left: auto;
+    margin-right: auto ;
+
 }
 
 .online-btn:hover
@@ -1054,11 +1074,13 @@ justify-content: center;
 }
 
 .subscription{
+    display: flex;
+    justify-content: space-between;
     margin-left: 93px;
 }
 
 .field{
-    position: relative;    
+    margin-right: 215px; 
 }
 
 .subscription-label{
@@ -1071,31 +1093,37 @@ justify-content: center;
     display: block;
 }
 
-.subscription-form{
-    display: flex;
-    justify-content: space-between;
-}
-
 .mail-input{
-    position: absolute;
-    width: 100%;
     height: 50px;
+    width: 100%;
+    margin-right: 12px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding-left: 10px;
     outline: none;
 }
+
 .send-btn{
-    position: absolute;
-    top: 108px;
-    left: 12px;
-    background-color:transparent;
-    width: 200px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     background:#2196F3;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-bottom: 10px;
+    padding-right: 62px;
+    position: relative;
+}
+
+.subscription-form{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .send-btn:hover .btn-icon:hover,
@@ -1103,17 +1131,11 @@ justify-content: center;
     color:#188CE8
 }
 
-.send-btn-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    }
-
 .btn-icon{
     position: absolute;
-    right: 12px;
+    right:28px;
     top:50%;
+    transform: translateY(-50%);
     color: #FFFFFF;
     transform: translateY(-50%);
 }
