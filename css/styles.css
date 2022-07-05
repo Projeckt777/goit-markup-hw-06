@@ -1081,7 +1081,8 @@ justify-content: center;
 }
 
 .field{
-    margin-right: 215px; 
+    display: flex; 
+    justify-content: center;
 }
 
 .subscription-label{
@@ -1096,7 +1097,7 @@ justify-content: center;
 
 .mail-input{
     height: 50px;
-    width: 100%;
+    width: 200px;
     margin-right: 12px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -1105,7 +1106,6 @@ justify-content: center;
 }
 
 .send-btn{
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1117,14 +1117,6 @@ justify-content: center;
     padding-left: 29px;
     padding-bottom: 10px;
     padding-right: 62px;
-    position: relative;
-}
-
-.subscription-form{
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .send-btn:hover .btn-icon:hover,
@@ -1133,10 +1125,6 @@ justify-content: center;
 }
 
 .btn-icon{
-    position: absolute;
-    right:28px;
-    top:50%;
     transform: translateY(-50%);
     color: #FFFFFF;
-    transform: translateY(-50%);
 }
