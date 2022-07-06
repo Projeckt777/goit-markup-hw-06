@@ -1075,8 +1075,6 @@ justify-content: center;
 }
 
 .subscription{
-    display: flex;
-    justify-content: space-between;
     margin-left: 93px;
 }
 
@@ -1116,7 +1114,7 @@ justify-content: center;
     padding-top: 10px;
     padding-left: 29px;
     padding-bottom: 10px;
-    padding-right: 62px;
+    padding-right: 33px;
 }
 
 .send-btn:hover .btn-icon:hover,
@@ -1125,6 +1123,6 @@ justify-content: center;
 }
 
 .btn-icon{
-    transform: translateY(-50%);
     color: #FFFFFF;
+    margin-left: 10px;
 }
