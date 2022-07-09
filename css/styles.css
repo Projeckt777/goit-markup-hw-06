@@ -927,9 +927,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     color: black;
-    height: 50px;
     min-width: 200px;
     text-align: center;
     margin-bottom: 12px;
@@ -937,6 +936,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 .modal-close-btn{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 10px;
     right: 10px;
     background-color:transparent;
@@ -944,12 +946,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     height: 30px;
     border: 1px solid black;
     border-radius: 50%;
-}
-
-.button-close-link{
-display: flex;
-align-items: center;
-justify-content: center;
 }
 
 .modal-field{
@@ -972,7 +968,7 @@ justify-content: center;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 10px;
+    padding-left: 30px;
     outline: none;
 }
   
@@ -1004,6 +1000,7 @@ justify-content: center;
     border-radius: 4px;
     resize: none;
     font-size: 12px;
+    padding-left: 10px;
     color: #757575 50%;
 }
 
@@ -1095,12 +1092,13 @@ justify-content: center;
 
 .mail-input{
     height: 50px;
-    width: 200px;
+    width: 360px;
     margin-right: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left: 10px;
     outline: none;
+    background: transparent;
 }
 
 .send-btn{
